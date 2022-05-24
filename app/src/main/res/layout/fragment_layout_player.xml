@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragment_layout_player"
+    android:background="@color/pink"
+    android:layout_margin="5dp">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="1dp">
+       <ImageView
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:src="@drawable/ic_music"
+           android:background="@drawable/ic_launcher_background"
+           android:id="@+id/art_music"
+           android:scaleType="centerCrop"
+           />
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:id="@+id/next_bottom"
+           android:src="@drawable/ic_next"
+           android:layout_alignParentEnd="true"
+           android:layout_centerVertical="true"
+           android:layout_marginEnd="10dp"
+           android:layout_toStartOf="@id/play_bottom"
+           />
+
+       <ImageView
+           android:layout_width="45dp"
+           android:layout_height="45dp"
+           android:id="@+id/play_bottom"
+           android:src="@drawable/ic_play"
+           android:layout_alignParentEnd="true"
+           android:layout_centerVertical="true"
+           android:layout_marginEnd="40dp"
+           />
+       
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/text_song_name_bottom"
+           android:text="@string/song_name_here"
+           android:textColor="@color/white"
+           android:textSize="15sp"
+           android:layout_toEndOf="@id/art_music"
+           android:layout_marginStart="10dp"
+           android:layout_marginTop="5dp"
+           android:maxLines="1"
+           android:layout_toStartOf="@id/play_bottom"
+           android:layout_marginEnd="10dp"
+           />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/text_art_name_bottom"
+           android:text="@string/art_name_here"
+           android:textColor="@color/white"
+           android:textSize="12sp"
+           android:layout_toEndOf="@id/art_music"
+           android:layout_marginStart="10dp"
+           android:layout_marginTop="25dp"
+           android:maxLines="1"
+           android:layout_toStartOf="@id/play_bottom"
+           android:layout_marginEnd="10dp"
+           />
+   </RelativeLayout>
+
+</FrameLayout>

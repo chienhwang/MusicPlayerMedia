@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgm"
+    tools:context=".MusicPlayerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_expand"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_expand"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/song_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/song_name"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/song_art"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/song_art"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginStart="20dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/image_music"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="120dp"
+        android:background="@null"
+        custom:cardCornerRadius="80dp"
+        custom:cardElevation="40sp"
+        android:src="@drawable/img"
+        />
+
+    <com.gauravk.audiovisualizer.visualizer.BarVisualizer
+        android:id="@+id/blast"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        custom:avDensity="0.8"
+        custom:avType="fill"
+        custom:avColor="#A81290"
+        custom:avSpeed="normal"/>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_Control"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_shuffle"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginBottom="60dp"
+            android:background="@null"
+            android:src="@drawable/ic_shuffle"
+
+            />
+
+        <ImageView
+            android:id="@+id/image_play"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="173dp"
+            android:layout_marginBottom="45dp"
+            android:background="@null"
+            android:src="@drawable/ic_play"
+
+            />
+
+        <ImageView
+            android:id="@+id/image_pre"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginBottom="60dp"
+            android:src="@drawable/ic_previous"
+
+            />
+
+        <ImageView
+            android:id="@+id/image_next"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="261dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/ic_next"
+
+            />
+
+        <ImageView
+            android:id="@+id/image_repeat"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="359dp"
+            android:layout_marginBottom="60dp"
+            android:background="@null"
+            android:src="@drawable/ic_repeat"
+            />
+
+        <SeekBar
+            android:id="@+id/simpleSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="140dp"
+            android:thumb="@drawable/puple" />
+
+        <TextView
+            android:id="@+id/textTimeStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="350dp"
+            android:layout_marginBottom="140dp"
+            android:text="@string/timeStart"
+            android:textColor="#ffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textEndTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="365dp"
+            android:layout_marginBottom="140dp"
+            android:text="@string/endTime"
+            android:textColor="#ffff"
+            android:textSize="15sp"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

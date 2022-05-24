@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@null"
+    android:id="@+id/mContaider"
+    android:orientation="vertical"
+    tools:context=".HomeSongsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <me.relex.circleindicator.CircleIndicator
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/circle_indicator"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="190dp"
+            app:ci_drawable="@drawable/backgound_indicator"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:text="Gần đây "
+        android:id="@+id/list_song_name"
+        android:textSize="15sp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_dash_board"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@null"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:text="Album Bài Hát"
+        android:id="@+id/album_name"
+        android:textSize="15sp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="@string/y_u_th_ch"
+        android:id="@+id/love"
+        android:icon="@drawable/ic_favorite"
+        />
+    <item
+        android:title="@string/xem_album"
+        android:id="@+id/show_album"
+        android:icon="@drawable/ic_album"
+        app:showAsAction="collapseActionView"
+        />
+    <item
+        android:title="@string/xem_ngh_s"
+        android:id="@+id/show_nghe_si"
+        android:icon="@drawable/ic_present"
+        app:showAsAction="collapseActionView"
+        />
+    <item
+        android:title="@string/delete"
+        android:id="@+id/delete"
+        android:icon="@drawable/ic_delete"
+        app:showAsAction="withText"
+        />
+
+</menu>

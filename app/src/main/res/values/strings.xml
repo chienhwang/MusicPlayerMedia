@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Music</string>
+    <string name="nameSong">Tên Bài Hát</string>
+    <string name="timeStart">00:00</string>
+    <string name="endTime">00:00</string>
+    <string name="nextLeft"> </string>
+    <string name="nextRight"> </string>
+    <string name="play"> </string>
+    <string name="todo">TODO</string>
+    <string name="music">MUSIC</string>
+    <string name="slogan"> &amp; By Group Huy - Chiến</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_song">Name Song</string>
+    <string name="title">Title</string>
+    <string name="song_art">Song art</string>
+    <string name="song_name">Song Name</string>
+    <string name="ngan_cach">|</string>
+    <string name="delete">Xóa bài hát</string>
+    <string name="song_name_here">Song name here</string>
+    <string name="art_name_here">Art name here</string>
+    <string name="xem_ngh_s">Xem Nghệ Sĩ</string>
+    <string name="xem_album">Xem Album</string>
+    <string name="y_u_th_ch">Yêu Thích</string>
+</resources>
